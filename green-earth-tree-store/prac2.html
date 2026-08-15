@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome tag -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- font integration -->
+
+
+
+    <!-- tailwind + daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<!-- navbar section -->
+<header class="fixed top-0 w-full z-50"></header>
+<div class="navbar bg-green-700 shadow-sm">
+    <div class="navbar-start">
+        <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                <li><a>About</a></li>
+                <li><a>Gallery</a></li>
+                <li><a>Plant a Tree</a></li>
+                <li><a>Plant a Tree</a></li>
+            </ul>
+        </div>
+        <a class="btn btn-ghost text-xl text-amber-50"><i class="fa-solid fa-tree"></i>Green Earth</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+            <li class="text-amber-50"><a>About</a></li>
+            <li class="text-amber-50"><a>Gallery</a></li>
+            <li class="text-amber-50"><a>Plant a Tree</a></li>
+
+        </ul>
+    </div>
+    <div class="navbar-end ">
+        <a class="btn text-green-700  bg-amber-400 rounded-3xl hover:bg-green-200">Plant a Tree</a>
+    </div>
+</div>
+
+</header>
+
+
+
+
+
+<body class="bg-green-50">
+
+
+    <!-- banner section -->
+    <section class=" bg-green-100 flex justify-center items-center ">
+        <div>
+            <img src="./assets/hero-leaf1.png" alt="">
+        </div>
+        <div class="flex flex-col justify-center items-center space-y-4">
+            <h1 class="text-5xl font-bold text-green-950">Plant a tree, Grow a Future</h1>
+
+            <p class="text-[13px]">Join our mission to plant 1 million trees and make Earth greener for future
+                generations</p>
+
+            <button class="w-[137px] h-[43px] bg-amber-300 rounded-4xl text-green-600 font-bold">Get Involved</button>
+
+        </div>
+
+        <div>
+            <img src="./assets/hero-leaf2.png" alt="">
+        </div>
+
+
+    </section>
+
+
+    <!-- choose your trees -->
+    <section class="py-10">
+        <h2 class="text-3xl font-semibold text-center">
+            Choose Your Trees
+        </h2>
+    </section>
+
+
+    <!-- trees(functionality) main vox -->
+    <section class=" p-10  mx-15 my-10 ">
+
+        <!-- categories main vox -->
+        <div>
+            <p class="font-bold">Categories</p>
+            <div id="category-container">
+
+
+            </div>
+        </div>
+
+        <!-- tress cards main vox -->
+        <div class="mx-3">
+
+
+            <div id="card-container" class=" w-11/12  mx-auto gap-3 grid grid-cols-3">
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <!-- Your cart main vox -->
+        <div class="min-w-45 min-h-[793px] bg-white rounded-2xl p-3">
+            <h1 class="font-bold">Your cart</h1>
+
+            <div id="cart-container">
+                
+                
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

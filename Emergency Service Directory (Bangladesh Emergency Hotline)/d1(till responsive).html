@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+
+<body class="">
+    <!-- header(nav-Bar) -->
+    <header>
+        <!-- main header vox -->
+        <div class="w-[1920px]  h-[100px] flex justify-between items-center">
+
+            <!--left side main vox -->
+            <div class=" w-[195px] h-[50px] my-[25px] flex justify-center gap-[10px] ">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-[16px] font-bold
+            text-green-800">Emergency <br> Service</h1>
+            </div>
+
+
+            <!-- right side main vox -->
+            <div class="w-[397px] h-[52px] flex justify-center items-center gap-3 my-[25px]">
+
+                <!-- heart count design -->
+                <div class="w-[100px] h-[52px] bg-green-100 rounded-[50px] flex justify-center items-center gap-1">
+                    <h1 id="header-heart" class="font-bold">0</h1>
+                    <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="">
+                </div>
+
+                <!--coins count design  -->
+                <div class="w-[100px] h-[52px] bg-green-100 rounded-[50px] flex justify-center items-center gap-1">
+                    <h1 id="coin-count" class="font-bold">100</h1>
+                    <img class="w-[30px] h-[30px]" src="./assets/coin.png" alt="">
+                </div>
+
+                <!-- copy count design -->
+                <div class="w-[100px] h-[52px] bg-green-500 rounded-[50px] flex justify-center items-center gap-1">
+                    <h1 class="font-bold text-amber-50"> <span id="copy-count">0</span> Copy</h1>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </header>
+    
+
+    <!-- banner section -->
+    <section>
+        <div class="w-[1920px] h-[239px] bg-gradient-to-r from-green-900 via-green-700 to-green-900">
+
+            <!-- vanner logo vox -->
+            <div class="flex justify-center  pt-[40px]">
+                <img class="w-[92px] h-[92px]" src="./assets/logo-dark.png" alt="">
+            </div>
+
+            <!-- vanner text vox -->
+            <div class="flex justify-center pt-[10px]">
+                <h1 class="text-[24px] font-bold text-white">Emergency Service Directory</h1>
+
+
+            </div>
+
+            <!-- vanner paragraph vox -->
+            <div>
+                <p class="text-[16px] font-normal text-white text-center pt-[10px]">Government Emergency Services at
+                    your Fingertip - A Project by Government of the People's Republic of Bangladesh </p>
+            </div>
+
+
+    </section>
+
+
+    <!-- main vody 2 part -->
+    <main class="w-[1920px] h-[1300px] bg-green-50 ">
+
+        <!-- div for cards and history -->
+        <div class="w-[1800px] h-[1140px] ml-[40px] flex">
+
+
+            <!-- div for  all cards -->
+
+            <div class="grid grid-cols-3 w-[1370px] gap-5">
+
+
+
+
+                <!-- card 1 main vox -->
+                <div class="w-[436px] h-[375px] bg-white rounded-[20px] p-5 mt-10">
+
+
+                    <!-- card 1 image and icon vox -->
+                    <div class="flex justify-between items-center">
+
+                        <!-- img vox -->
+                        <div class="w-[60px] h-[60px] bg-pink-100 rounded-[15px] flex justify-center items-center">
+                            <img class="w-[32px] h-[32px]" src="./assets/emergency.png" alt="">
+                        </div>
+
+                        <!-- icon tag-->
+
+                        <div class="card-heart w-[24px] h-[24px]">
+                            <i class="fa-regular fa-heart "></i>
+
+                        </div>
+
+                    </div>
+
+                    <!-- card 1 text vox -->
+                    <div class="pt-5">
+                        <h1 class="text-[25px] font-bold ">National Emergency Number</h1>
+                        <p id="emergency-text" class="text-[16px] font-normal pt-2">National Emergency</p>
+                        <h1 id="emergency-num" class="text-[40px] font-bold pt-5">999</h1>
+
+                        <!-- (all) vox-->
+                        <div class="w-[53px] h-[37px] p-2 bg-gray-100 rounded-[15px] flex justify-center items-center">
+                            <p>All</p>
+                        </div>
+
+                        <!-- copy and call  -->
+                        <div>
+
+
+                            <!-- copy button -->
+                            <button id="copy-vtn"
+                                class="w-[182px] h-[40px] border bord  bg-white rounded-[10px] text-gray-400 font-bold mt-5 hover:bg-black">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+
+
+                            </button>
+
+
+
+                            <!-- call vutton -->
+                            <button id="emergency-call"
+                                class="w-[180px] h-[40px] bg-green-600 rounded-[10px] hover:bg-gray-400 text-white font-bold mt-5 ml-3">
+                                <i class="fa-solid fa-phone"></i>
+                                Call</button>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+                <!-- card 2 main vox -->
+                <div class="w-[436px] h-[375px] bg-white rounded-[20px] p-5 mt-10">
+
+
+                    <!-- card 1 image and icon vox -->
+                    <div class="flex justify-between items-center">
+
+                        <!-- img vox -->
+                        <div class="w-[60px] h-[60px] bg-pink-100 rounded-[15px] flex justify-center items-center">
+                            <img class="w-[32px] h-[32px]" src="./assets/police.png" alt="">
+                        </div>
+
+                        <!-- icon tag-->
+                        <div class="card-heart w-[24px] h-[24px]">
+                            <i class="fa-regular fa-heart "></i>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- card 1 text vox -->
+                    <div class="pt-5">
+                        <h1 class="text-[25px] font-bold ">Police Helpline Number</h1>
+                        <p class="text-[16px] font-normal pt-2">Police</p>
+                        <h1 class="text-[40px] font-bold pt-5">999</h1>
+
+                        <!-- (all) vox-->
+                        <div class="w-[53px] h-[37px] p-2 bg-gray-100 rounded-[15px] flex justify-center items-center">
+                            <p>Police</p>
+                        </div>
+
+                        <!-- copy and call  -->
+                        <div>
+
+
+                            <!-- copy button -->
+                            <button
+                                class="w-[182px] h-[40px] border bord bg-white rounded-[10px] text-gray-400 font-bold mt-5">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+
+
+                            </button>
+
+
+
+                            <!-- call vutton -->
+                            <button
+                                class="w-[180px] h-[40px] bg-green-600 rounded-[10px] text-white font-bold mt-5 ml-3">
+                                <i class="fa-solid fa-phone"></i>
+                                Call</button>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+                <!-- card 3 main vox -->
+                <div class="w-[436px] h-[375px] bg-white rounded-[20px] p-5 mt-10">
+
+
+                    <!-- card 1 image and icon vox -->
+                    <div class="flex justify-between items-center">
+
+                        <!-- img vox -->
+                        <div class="w-[60px] h-[60px] bg-pink-100 rounded-[15px] flex justify-center items-center">
+                            <img class="w-[32px] h-[32px]" src="./assets/fire-service.png" alt="">
+                        </div>
+
+                        <!-- icon tag-->
+                        <div class="card-heart w-[24px] h-[24px]">
+                            <i class="fa-regular fa-heart "></i>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- card 1 text vox -->
+                    <div class="pt-5">
+                        <h1 class="text-[25px] font-bold ">Fire Service Number</h1>
+                        <p class="text-[16px] font-normal pt-2">Fire Service</p>
+                        <h1 class="text-[40px] font-bold pt-5">999</h1>
+
+                        <!-- (all) vox-->
+                        <div class="w-[53px] h-[37px] p-2 bg-gray-100 rounded-[15px] flex justify-center items-center">
+                            <p>Fire</p>
+                        </div>
+
+                        <!-- copy and call  -->
+                        <div>
+
+
+                            <!-- copy button -->
+                            <button
+                                class="w-[182px] h-[40px] border bord bg-white rounded-[10px] text-gray-400 font-bold mt-5">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+
+
+                            </button>
+
+
+
+                            <!-- call vutton -->
+                            <button
+                                class="w-[180px] h-[40px] bg-green-600 rounded-[10px] text-white font-bold mt-5 ml-3">
+                                <i class="fa-solid fa-phone"></i>
+                                Call</button>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <!-- card 4 main vox -->
+                <div class="w-[436px] h-[375px] bg-white rounded-[20px] p-5 ">
+
+
+                    <!-- card 1 image and icon vox -->
+                    <div class="flex justify-between items-center">
+
+                        <!-- img vox -->
+                        <div class="w-[60px] h-[60px] bg-pink-100 rounded-[15px] flex justify-center items-center">
+                            <img class="w-[32px] h-[32px]" src="./assets/ambulance.png" alt="">
+                        </div>
+
+                        <!-- icon tag-->
+                        <div class="card-heart w-[24px] h-[24px]">
+                            <i class="fa-regular fa-heart "></i>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- card 1 text vox -->
+                    <div class="pt-5">
+                        <h1 class="text-[25px] font-bold ">Ambulance Service</h1>
+                        <p class="text-[16px] font-normal pt-2">Ambulance</p>
+                        <h1 class="text-[40px] font-bold pt-5">1994-999999</h1>
+
+                        <!-- (all) vox-->
+                        <div class="w-[53px] h-[37px] p-2 bg-gray-100 rounded-[15px] flex justify-center items-center">
+                            <p>Health</p>
+                        </div>
+
+                        <!-- copy and call  -->
+                        <div>
+
+
+                            <!-- copy button -->
+                            <button
+                                class="w-[182px] h-[40px] border bord bg-white rounded-[10px] text-gray-400 font-bold mt-5">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+
+
+                            </button>
+
+
+
+                            <!-- call vutton -->
+                            <button
+                                class="w-[180px] h-[40px] bg-green-600 rounded-[10px] text-white font-bold mt-5 ml-3">
+                                <i class="fa-solid fa-phone"></i>
+                                Call</button>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <!-- card 5 main vox  -->
+                <div class="w-[436px] h-[375px] bg-white rounded-[20px] p-5 ">
+
+
+                    <!-- card 1 image and icon vox -->
+                    <div class="flex justify-between items-center">
+
+                        <!-- img vox -->
+                        <div class="w-[60px] h-[60px] bg-pink-100 rounded-[15px] flex justify-center items-center">
+                            <img class="w-[32px] h-[32px]" src="./assets/emergency.png" alt="">
+                        </div>
+
+                        <!-- icon tag-->
+                        <div class="card-heart w-[24px] h-[24px]">
+                            <i class="fa-regular fa-heart "></i>
+
+                        </div>
+
+                    </div>
+
+                    <!-- card 1 text vox -->
+                    <div class="pt-5">
+                        <h1 class="text-[25px] font-bold ">Women & Children Helpline</h1>
+                        <p class="text-[16px] font-normal pt-2">Women & Children Helpline</p>
+                        <h1 class="text-[40px] font-bold pt-5">109</h1>
+
+                        <!-- (all) vox-->
+                        <div class="w-[53px] h-[37px] p-2 bg-gray-100 rounded-[15px] flex justify-center items-center">
+                            <p>Help</p>
+                        </div>
+
+                        <!-- copy and call  -->
+                        <div>
+
+
+                            <!-- copy button -->
+                            <button
+                                class="w-[182px] h-[40px] border bord bg-white rounded-[10px] text-gray-400 font-bold mt-5">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+
+
+                            </button>
+
+
+
+                            <!-- call vutton -->
+                            <button
+                                class="w-[180px] h-[40px] bg-green-600 rounded-[10px] text-white font-bold mt-5 ml-3">
+                                <i class="fa-solid fa-phone"></i>
+                                Call</button>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+                <!-- card 6 main vox -->
+                <div class="w-[436px] h-[375px] bg-white rounded-[20px] p-5 ">
+
+
+                    <!-- card 1 image and icon vox -->
+                    <div class="flex justify-between items-center">
+
+                        <!-- img vox -->
+                        <div class="w-[60px] h-[60px] bg-pink-100 rounded-[15px] flex justify-center items-center">
+                            <img class="w-[32px] h-[32px]" src="./assets/emergency.png" alt="">
+                        </div>
+
+                        <!-- icon tag-->
+                        <div class="card-heart w-[24px] h-[24px]">
+                            <i class="fa-regular fa-heart "></i>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- card 1 text vox -->
+                    <div class="pt-5">
+                        <h1 class="text-[25px] font-bold ">Anti-Corruption Helpline</h1>
+                        <p class="text-[16px] font-normal pt-2">Anti-Corruption</p>
+                        <h1 class="text-[40px] font-bold pt-5">106</h1>
+
+                        <!-- (all) vox-->
+                        <div class="w-[53px] h-[37px] p-2 bg-gray-100 rounded-[15px] flex justify-center items-center">
+                            <p>Govt.</p>
+                        </div>
+
+                        <!-- copy and call  -->
+                        <div>
+
+
+                            <!-- copy button -->
+                            <button
+                                class="w-[182px] h-[40px] border bord bg-white rounded-[10px] text-gray-400 font-bold mt-5">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+
+
+                            </button>
+
+
+
+                            <!-- call vutton -->
+                            <button
+                                class="w-[180px] h-[40px] bg-green-600 rounded-[10px] text-white font-bold mt-5 ml-3">
+                                <i class="fa-solid fa-phone"></i>
+                                Call</button>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+                <!-- card 7 main vox -->
+                <div class="w-[436px] h-[375px] bg-white rounded-[20px] p-5 ">
+
+
+                    <!-- card 1 image and icon vox -->
+                    <div class="flex justify-between items-center">
+
+                        <!-- img vox -->
+                        <div class="w-[60px] h-[60px] bg-pink-100 rounded-[15px] flex justify-center items-center">
+                            <img class="w-[32px] h-[32px]" src="./assets/emergency.png" alt="">
+                        </div>
+
+                        <!-- icon tag-->
+                        <div class="card-heart w-[24px] h-[24px]">
+                            <i class="fa-regular fa-heart "></i>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- card 1 text vox -->
+                    <div class="pt-5">
+                        <h1 class="text-[25px] font-bold ">Electricity Helpline</h1>
+                        <p class="text-[16px] font-normal pt-2">Electricity Outage</p>
+                        <h1 class="text-[40px] font-bold pt-5">16216</h1>
+
+                        <!-- (all) vox-->
+                        <div class="w-[53px] h-[37px] p-2 bg-gray-100 rounded-[15px] flex justify-center items-center">
+                            <p>Electricity</p>
+                        </div>
+
+                        <!-- copy and call  -->
+                        <div>
+
+
+                            <!-- copy button -->
+                            <button
+                                class="w-[182px] h-[40px] border bord bg-white rounded-[10px] text-gray-400 font-bold mt-5">
+                                <i class="fa-regular fa-copy"></i>
+                                Copy
+
+
+                            </button>
+
+
+
+                            <!-- call vutton -->
+                            <button
+                                class="w-[180px] h-[40px] bg-green-600 rounded-[10px] text-white font-bold mt-5 ml-3">
+                                <i class="fa-solid fa-phone"></i>
+                                Call</button>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+            <!-- section for Call History -->
+            <section>
+                <div id="call-history" class="w-[400px] h-[1140px] bg-white rounded-[20px] ml-10 mt-10 p-5">
+
+                    <!-- call history text vox and Clear -->
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h1 class="text-[25px] ">
+                                <i class="fa-solid fa-clock"></i>
+                                Call History
+                            </h1>
+
+
+                        </div>
+
+                        
+
+
+                        <!-- clear (vutton)  -->
+                        <button id="clear-history"
+                            class="text-white bg-green-600 hover:bg-gray-500 rounded-[30px] w-[114px] h-[52px] flex justify-center items-center gap-2 mt-3 text-[16px] font-bold">
+                            Clear
+                        </button>
+
+
+
+
+
+                    </div>
+
+
+
+
+                    <!-- history details vox (for js)-->
+                     <div id="history-container">
+                            
+                        </div>
+                   
+                </div>
+
+
+
+
+
+
+            </section>
+
+
+
+
+
+        </div>
+
+    </main>
+
+    <script src="design1.js"></script>
+
+
+</body>
+
+</html>

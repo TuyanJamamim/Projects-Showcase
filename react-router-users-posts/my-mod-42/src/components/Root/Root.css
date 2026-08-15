@@ -1,0 +1,7 @@
+
+nav a.active{
+    color: aqua;
+}
+/* this means inside root there is Header and inside header there is anchor tag(NavLInk) and inside navLink tag there is a class names active and we are giving style to that class...
+
+*as <Header> is inside <Root> and this root.css is conected to root.jsx so giving style in root.css for <header> is possivle like this    */
