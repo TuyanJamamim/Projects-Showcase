@@ -1,3 +1,6 @@
+
+# Drive Link: https://drive.google.com/drive/folders/1E-neZyTX06-lO-9klsP8tCmS4_8ax6jW?usp=drive_link
+
 \# Election Campaign Video Content (2026)
 
 
@@ -54,9 +57,4 @@ I handled the complete video production process, including:
 
 
 
-\## Drive Link
-
-
-
-https://drive.google.com/drive/folders/1E-neZyTX06-lO-9klsP8tCmS4\_8ax6jW?usp=drive\_link
 
